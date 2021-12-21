@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lourdes Luna</title>
+    <script src="https://kit.fontawesome.com/45d522e85c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <main>
+        <form class="form-contanier">
+            <div class="form-box">
+                <div class="encuesta">
+                    <h2>Datos</h2>
+                    <div class="flex-row-between">
+                        <div class="field campo">
+                            <label for="idNombre">Nombre<sup>*</sup> </label>
+                            <input required type="text" id="idNombre" maxlength="30" size="20"
+                                placeholder="Por ejemplo: Lourdes" />
+                        </div>
+                        <div class="field campo">
+                            <label for="idApellido">Apellido<sup>*</sup></label>
+                            <input required type="text" id="idApellido" maxlength="30" size="20"
+                                placeholder="Por ejemplo: Luna" />
+                        </div>
+                    </div>
+                    <div class="flex-row-between">
+                        <div class="field campo">
+                            <label for="idSexo">Sexo<sup>*</sup> </label>
+                            <select id="idSexo">
+                                <option value="fem">Femenino</option>
+                                <option value="masc">Masculino</option>
+                            </select>
+                        </div>
+                        <div class="field campo">
+                            <label for="idDate">Fecha de nacimiento<sup>*</sup></label>
+                            <input type="date" id="idDate" maxlength="30" size="20" />
+                        </div>
+                    </div>
+                    <div class="flex-column campo">
+                        <label for="idMail">Email<sup>*</sup></label>
+                        <input required type="email" id="idMail" maxlength="30" size="20"
+                            placeholder="Por ejemplo: lourdeslunaweb@gmail.com" />
+                    </div>
+                    <div class="flex-column campo">
+                        <label for="idPassword">Password<sup>*</sup></label>
+                        <input required type="password" id="idPassword" maxlength="30" size="20" />
+                    </div>
+                    <h2 class="mt-3">Preguntas</h2>
+                    <div class="campo mt-3">
+                        <label>¿Qué dia prefiere ser contactado/a?</label>
+                        <div>
+                        <label for="idLunes">Lunes </label>
+                        <input id="idLunes" name="dias" type="checkbox" value="lunes" checked />
+                        <label for="idMartes">Martes </label>
+                        <input id="idMartes" name="dias" type="checkbox" value="martes" />
+                        <label for="idMiercoles">Miercoles</label>
+                        <input id="idMiercoles" name="dias" type="checkbox" value="miercoles" />
+                        <label for="idJueves">Jueves</label>
+                        <input id="idJueves" name="dias" type="checkbox" value="jueves" />
+                        <label for="idViernes">Viernes</label>
+                        <input id="idViernes" name="dias" type="checkbox" value="viernes" />
+                    </div>
+                    </div>
+                    <div class="campo mt-3">
+                        <label>¿En qué horario prefiere ser contactado/a?</label>
+                        <div>
+                        <input id="idman" name="horario" type="radio" value="mañana" />
+                        <label for="idman">Mañana</label>
+                        <input id="idmed" name="horarios" type="radio" value="mediodia" />
+                        <label for="idmed">Mediodia </label>
+                        <input id="idtar" name="horarios" type="radio" value="tarde" />
+                        <label for="idtar">Tarde</label>
+                    </div>
+                    </div>
+                    <div class="flex-column campo mt-3">
+                        <label for="tickmarks">¿Cómo calificaría el servicio?</label>
+                        <input type="range" list="tickmarks">
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100">
+                        </datalist>
+                        <div class="face-box">
+                            <span>☹️</span>
+                            <span>😐</span>
+                            <span>😊</span>
+                        </div>
+                    </div>
+                    <div class="mensaje campo">
+                        <label for="idComentarios">Déjenos un mensaje</label>
+                        <textarea id="idComentarios" cols="50" rows="4" maxlength="1000"
+                            placeholder="Escriba un mensaje aquí"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="contacto-footer">
+            <div class="icono-footer">
+                <a href="https://www.linkedin.com/in/lourdes-luna-web" target="_blank"><i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="icono-footer">
+                <a href="https://github.com/lourdeslunaweb" target="_blank"><i class="fab fa-github-square"></i>
+                </a>
+            </div>
+            <div class="icono-footer">
+                <a href="mailto:lourdeslunaweb@gmail.com"><i class="fas fa-envelope-square"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hecho">
+            <h3>Hecho con 💚 por Lourdes</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

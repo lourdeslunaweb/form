@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+.form-contanier{
+    width: 100%;
+    background-color: #f7e6d0cc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    background-color: white;
+    width: 70%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+
+.encuesta{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.flex-row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+input, select, textarea{
+    background-color:#f7e6d0cc;
+    border-radius: 1.5em;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-style: none;
+    outline: none;
+}
+
+.face-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-input-color{
+    margin: 7px 0;
+    width: 100%;
+    background-color: var(--input-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+button{
+    background-color: #f2aa4a;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    width: 25%;
+    margin-top: 20px;
+    border-style: none;
+    outline: none;
+}
+
+@media screen and (max-width: 350px){
+    button{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form-box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .flex-row-between{
+        display: flex;
+        flex-direction: column;
+    }
+    .campo{
+        width: 105%;
+    }
+}
+
+
+
+
+
